@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: #dcdcdd;
+  color: #1985a1;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/* main content */
+#main-doc {
+  width: 82%;
+  padding: 2rem 2.5rem;
+  border-left: 2px solid #4c5c68;
+}
+
+.main-section header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-bottom: 1rem;
+}
+
+.marked {
+  background-color: #46494c;
+  color: #a3dce9;
+  padding: 1rem;
+}
+
+/* navbar */
+
+#navbar {
+  width: 18%;
+}
+
+#navbar header {
+  border-bottom: 2px solid #4c5c68;
+  border-top: 2px solid #4c5c68;
+  border-left: 2px solid #4c5c68;
+  text-align: center;
+  padding: 2rem 0.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar ul {
+  list-style: none;
+  position: sticky;
+  top: 100px;
+  left: 0;
+}
+
+#navbar li {
+  border-bottom: 2px solid #4c5c68;
+  padding: 1rem;
+}
+
+#navbar a {
+  color: #46494c;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar {
+    width: 100%;
+    position: relative;
+  }
+
+  #navbar header {
+    width: 100%;
+    position: relative;
+  }
+
+  #navbar ul {
+    width: 100%;
+  }
+
+  #navbar li {
+    width: 100%;
+  }
+
+  #main-doc {
+    width: 100%;
+  }
+}

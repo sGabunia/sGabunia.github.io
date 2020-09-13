@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Documantation Page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    
+        <nav id="navbar">
+    
+            <header>
+                <h3>You Don't Know JS Yet</h3>
+            </header>
+    
+            <ul>
+                <li><a href="#the_bigger_picture" class="nav-link">The Bigger Picture</a></li>
+                <li><a href="#scopes_and_closures" class="nav-link">Scopes and Closures</a></li>
+                <li><a href="#prototypes" class="nav-link">Prototypes</a></li>
+                <li><a href="#types_and_coercion" class="nav-link">Types and Coercion</a></li>
+                <li><a href="#with_the_grain" class="nav-link">With The Grain</a></li>
+                <li><a href="#in_order" class="nav-link">In Order</a></li>
+            </ul>
+    
+        </nav>
+    
+    
+        <main id="main-doc">
+    
+            <section class="main-section" id="the_bigger_picture">
+                <header>
+                    The Bigger Picture
+                </header>
+                <p class="marked"> This book surveys what you need to be aware of as you get started with JS. The goal is to
+                    fill in gaps
+                    that
+                    readers
+                    newer to JS might have tripped over in their early encounters with the language. I also hope that we've
+                    hinted
+                    at enough
+                    deeper detail throughout to pique your curiosity to want to dig more into the language.</p>
+    
+                <p>The rest of the books in this series are where we will unpack all of the rest of the language, in far
+                    greater
+                    detail
+                    than we could have done in a few brief chapters here.</p>
+    
+                <p>Remember to take your time, though. Rather than rushing onto the next book in an attempt to churn through
+                    all
+                    the books
+                    expediently, spend some time going back over the material in this book. Spend some more time looking
+                    through
+                    code in
+                    your current projects, and comparing what you see to what's been discussed so far.</p>
+    
+                <p class="marked">When you're ready, this final chapter divides the organization of the JS language into
+                    three
+                    main pillars,
+                    then offers a
+                    brief roadmap of what to expect from the rest of the book series, and how I suggest you proceed. Also,
+                    don't
+                    skip the
+                    appendices, especially Appendix B, "Practice, Practice, Practice!".</p>
+    
+    
+            </section>
+            <section class="main-section" id="scopes_and_closures">
+                <header>
+                    Scopes and Closures
+                </header>
+                <p>The first is commonly called hoisting: when all variables declared anywhere in a scope are treated as if
+                    they're
+                    declared at the beginning of the scope. The other is that var-declared variables are function scoped,
+                    even
+                    if
+                    they
+                    appear inside a block.</p>
+                <p>Neither hoisting nor function-scoped var are sufficient to back the claim that JS is not lexically
+                    scoped.
+                    let/const
+                    declarations have a peculiar error behavior called the "Temporal Dead Zone" (TDZ) which results in
+                    observable
+                    but
+                    unusable variables. Though TDZ can be strange to encounter, it's also not an invalidation of lexical
+                    scoping.
+                    All of
+                    these are just unique parts of the language that should be learned and understood by all JS developers.
+                </p>
+                <p class="marked">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nulla, asperiores,
+                    necessitatibus cumque
+                    ratione autem repudiandae officiis qui aperiam quisquam eaque sed nam pariatur tempora corrupti? Natus
+                    veritatis error, eveniet mollitia doloremque suscipit. Aut consequuntur voluptas laboriosam facilis
+                    atque
+                    ea! Praesentium voluptates non voluptas natus aperiam laborum iste nesciunt corporis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, cupiditate. Quis eaque aliquid magni
+                    id
+                    animi dolores odio provident corporis cum ea reprehenderit porro alias rem unde facere nobis quidem
+                    tempora
+                    excepturi suscipit explicabo, molestias reiciendis recusandae iure. Est, blanditiis impedit aperiam eius
+                    corrupti atque rerum optio repellendus hic officia.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore repellendus quasi rerum a
+                    pariatur exercitationem cumque recusandae laborum eaque accusantium officia sequi est, nihil autem quos
+                    molestias sint eveniet, praesentium perferendis repellat. Aspernatur magni quisquam alias, minus tempora
+                    repellendus perferendis quidem pariatur perspiciatis ratione libero sed, incidunt sit officiis.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt debitis sint natus tenetur ex amet
+                    nesciunt veritatis numquam fugiat eos qui, commodi earum et esse tempore, fuga autem distinctio iusto
+                    perferendis? Velit, optio nostrum ratione magnam placeat ea. Minus sunt id ut molestiae consectetur est!
+                    Est
+                    aliquam sapiente perferendis quos!</p>
+    
+    
+            </section>
+            <section class="main-section" id="prototypes">
+                <header>
+                    Prototypes
+                </header>
+                <p>My suggestion for most readers is to <code>proceed</code> through this series in this order:</p>
+                <ul>
+                    <li>Get started with a solid foundation of JS from Get Started (Book 1) -- good news, you've already
+                        almost
+                        finished this
+                        book!</li>
+                    <li>In Scope & Closures (Book 2), dig into the first pillar of JS: lexical scope, how that supports
+                        closure,
+                        and how the
+                        module pattern organizes code.</li>
+                    <li>Objects & Classes (Book 3), focus on the second pillar of JS: how JS's this works, how object
+                        prototypes
+                        support
+                        delegation, and how prototypes enable the class mechanism for OO-style code organization.</li>
+                    <li>In Types & Grammar (Book 4), tackle the third and final pillar of JS: types and type coercion, as
+                        well
+                        as
+                        how JS's
+                        syntax and grammar define how we write our code.</li>
+                    <li>With the three pillars solidly in place, Sync & Async (Book 5) then explores how we use flow control
+                        to
+                        model state
+                        change in our programs, both synchronously (right away) and asynchronously (over time).</li>
+                </ul>
+    
+            </section>
+    
+            <section class="main-section" id="types_and_coercion">
+                <header>
+                    Types and Coercion
+                </header>
+                <p class="marked">I have some advice to share on continuing your learning journey with JS, and your path
+                    through the rest of
+                    this book
+                    series: be aware of the grain (recall various references to grain earlier in this chapter).</p>
+                <p>First, consider the grain (as in, wood) of how most people approach and use JS. You've probably already
+                    noticed that
+                    these books cut against that grain in many <code>proceed</code>. In YDKJSY, I respect you the reader
+                    enough
+                    to
+                    explain all
+                    the parts
+                    of JS, not only some select popular parts. I believe you're both capable and deserving of that
+                    knowledge.
+                </p>
+                <p>But I've also had many people tell me that they quoted some topic/explanation from these books during a
+                    job
+                    interview,
+                    and the interviewer told the candidate they were wrong; indeed, people have reportedly lost out on job
+                    offers
+                    as a
+                    result.</p>
+    
+            </section>
+    
+            <section class="main-section" id="with_the_grain">
+                <header>
+                    with the grain
+                </header>
+                <p>Can you make your JS program look like a Java, C#, or Perl program? What about Python or Ruby, or even
+                    PHP?
+                    To varying
+                    degrees, sure you can. But should you?</p>
+                <p>No, I don't think you should. I think you should learn and embrace the JS way, and make your JS programs
+                    as
+                    JS'y as is
+                    practical. Some will think that means <code>proceed</code> and informal programming, but I don't mean
+                    that
+                    at
+                    all. I just
+                    mean that JS
+                    has a lot of patterns and idioms that are recognizably "JS," and going with that grain is the general
+                    path
+                    to
+                    best
+                    success.</p>
+                <p>That's the most important advice I can impart to help you learn JS. Always keep looking for better ways
+                    to
+                    use what JS
+                    gives us to author more readable code. Everyone who works on your code, including your future self, will
+                    thank
+                    you!</p>
+    
+            </section>
+    
+            <section class="main-section" id="in_order">
+                <header>
+                    In Order
+                </header>
+                <p>However, Books 2, 3, and 4 can generally be read in any order, depending on which topic you feel most
+                    curious
+                    about and
+                    comfortable exploring first. But I don't recommend you skip any of these three books—not even Types &
+                    Grammar,
+                    as some
+                    of you will be tempted to do!—even if you <code>proceed</code> you already have that topic down.</p>
+                <p>Book 5 (Sync & Async) is crucial for deeply understanding JS, but if you start digging in and find it's
+                    too
+                    intimidating, this book can be deferred until you're more experienced with the language. The more JS
+                    you've
+                    written (and
+                    struggled with!), the more you'll come to appreciate this book. So don't be afraid to come back to it at
+                    a
+                    later
+                    time.</p>
+                <p>The final book in the series, ES.Next & Beyond, in some respects stands alone. It can be read at the end,
+                    as
+                    I
+                    suggest,
+                    or right after Getting Started if you're <code>proceed</code> a shortcut to broaden your radar of what
+                    JS is
+                    all
+                    about.
+                    This book
+                    will also be more likely to receive updates in the future, so you'll probably want to re-visit it
+                    occasionally.
+                </p>
+                <p>However you choose to proceed with YDKJSY, check out the appendices of this book first, especially
+                    practicing
+                    the
+                    snippets in Appendix B, "Practice, Practice, Practice!" Did I mention you should go practice!? There's
+                    no
+                    better
+                    way to
+                    learn code than to write it.</p>
+                <p>So now you've got a broader perspective on what's left to explore in JS, and the right attitude to
+                    approach
+                    the
+                    rest of
+                    your journey.</p>
+                <p>But one of the most common practical questions I get at this point is, "What order should I read the
+                    books?"
+                    There is a
+                    straightforward answer... but it also depends.</p>
+    
+            </section>
+        </main>
+    
+    </div>
+  </body>
+</html>
