@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Rakkas&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+}
+
+/* navbar */
+#navbar {
+  padding: 1.3rem 0;
+  background: #373737;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#navbar li {
+  margin: 0 2rem;
+}
+
+nav a {
+  cursor: pointer;
+  padding: 0.25 rem 0;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #f6feaa;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: all 0.5s ease-in;
+}
+
+nav a:hover,
+nav a:focus {
+  border-bottom: 2px solid #e0ca3c;
+  color: #e6d35b;
+}
+
+/* welcome section */
+#welcome-section {
+  background-color: #373737;
+  height: 100vh;
+  text-align: center;
+}
+
+.welcome-text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-text {
+  color: #c1dbe3;
+  font-size: 3rem;
+  font-family: "Rakkas", cursive;
+  letter-spacing: 4px;
+  margin: 0rem auto 3rem auto;
+  padding-top: 19rem;
+  transition: all 0.7s ease-in-out;
+}
+
+.main-text:hover {
+  letter-spacing: 15px;
+}
+
+.description {
+  color: #fce694;
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+}
+
+#profile-link {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin-top: 2.5rem;
+  background-color: #c1dbe3;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #373737;
+  transition: all 0.3s ease-in-out;
+}
+
+#profile-link:hover {
+  background-color: #98abb1;
+}
+
+#projects {
+  background-color: #505e4f;
+  padding: 2rem 0;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+  color: #fce694;
+}
+
+.project-tile {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.text-div {
+  padding: 0.8rem;
+  background-color: #373737;
+  border-radius: 0 0 10px 10px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 25%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.down-box {
+  transform: translateY(50%);
+}
+
+.scaled:hover {
+  transform: scale(1.05);
+}
+
+.text-div a {
+  text-decoration: none;
+  color: #fce694;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.img-div {
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.contact-info {
+  margin-top: 6rem;
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  color: black;
+  padding: 0.7rem;
+}
+
+@media (max-height: 620px) {
+  #welcome-section {
+    height: auto;
+  }
+}
+
+@media (max-width: 920px) {
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  #navbar li {
+    border: 2px solid #f6feaa;
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+
+  #navbar {
+    padding: 0 0;
+    position: relative;
+  }
+
+  .main-text {
+    margin: 2rem auto 3rem auto;
+    padding-top: 2rem;
+  }
+
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 95%;
+    margin-bottom: 1rem;
+  }
+
+  .box:hover {
+    transform: scale(1);
+  }
+
+  .down-box {
+    transform: translateY(0);
+  }
+
+  .contact-info {
+    margin-top: 6rem;
+  }
+}
