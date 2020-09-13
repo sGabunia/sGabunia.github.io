@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Piedra&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid green; */
+}
+
+body {
+  background-color: #f2f3e2;
+  font-family: "Piedra", cursive;
+}
+
+.calculator {
+  width: 300px;
+  margin: 3rem auto;
+  background-color: #121113;
+}
+
+.previous {
+  padding: 0.5rem;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.buttons {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 75px;
+  height: 75px;
+  background-color: #222725;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.operation {
+  background-color: #899878;
+  color: #222725;
+  font-size: 1.6rem;
+}
+
+.previous-num,
+.current-num {
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-size: 1.7rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+#equals,
+#clear {
+  width: 150px;
+  background-color: #343a2e;
+}
+
+#equals {
+  background-color: #899878;
+  color: #222725;
+}
+
+span {
+  font-size: 4rem;
+}
+
+#add,
+#divide,
+#multiply {
+  width: 75px;
+}
