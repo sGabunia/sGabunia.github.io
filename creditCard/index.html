@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Credit Card Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="visa-card">
+        <div class="card-top">
+          <img
+            src="./img/icons8-visa-100.png"
+            class="visa-icon"
+            alt="visa credit card"
+          />
+        </div>
+
+        <div class="card-number">
+          <span class="one">#</span>
+          <span class="two">#</span>
+          <span class="three">#</span>
+          <span class="four push">#</span>
+          <span class="five">#</span>
+          <span class="six">#</span>
+          <span class="seven">#</span>
+          <span class="eight push">#</span>
+          <span class="nine">#</span>
+          <span class="ten">#</span>
+          <span class="eleven">#</span>
+          <span class="twelve push">#</span>
+          <span class="thirteen">#</span>
+          <span class="fourteen">#</span>
+          <span class="fifteen">#</span>
+          <span class="sixteen">#</span>
+        </div>
+
+        <div class="card-bottom">
+          <div class="card-holder-data">
+            <p class="data-header">Card Holder</p>
+            <p class="card-holder-name"></p>
+          </div>
+
+          <div class="card-dates">
+            <p class="data-header">Expires</p>
+            <p class="expire-date">
+              <span class="expire-month">MM</span>/<span class="expire-year"
+                >YY</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <div>
+          <label for="card-number" class="data-header">Card Number</label>
+          <input type="number" name="card-number" id="card-number" />
+          <p class="warning">16 digit card number must start with 4 or 5</p>
+        </div>
+
+        <div>
+          <label for="card-name" class="data-header">Card Name</label>
+          <input type="text" name="card-name" id="card-name" />
+        </div>
+
+        <div class="extras">
+          <div>
+            <label for="expiration-date" class="data-header">Month</label>
+            <select name="expiration-date" id="expiration-date">
+              <option value="MM">Month</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="expiration year" class="data-header">Year</label>
+            <select name="expiration-year" id="expiration-year">
+              <option value="YY">Year</option>
+              <option value="21">2021</option>
+              <option value="22">2022</option>
+              <option value="23">2023</option>
+              <option value="24">2024</option>
+              <option value="25">2025</option>
+              <option value="26">2026</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="cvv" class="data-header">CVV</label>
+            <input type="number" name="cvv" id="cvv" />
+            <p class="warning">Enter 3 digit number</p>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
