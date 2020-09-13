@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <h1 class="message">Player 1 Turn</h1>
+    <div class="players">
+        <div id="player1">
+            <h1>Score:
+                <span class="player1Score">0</span>
+            </h1>
+            <div class="dice player1Dice active">-</div>
+        </div>
+        <div id="player2">
+            <h1>Score:
+                <span class="player2Score">0</span>
+            </h1>
+            <div class="dice player2Dice">-</div>
+        </div>
+    </div>
+    
+    <button class="rollBtn"><img src="./icons/icons8-dice-48.png" alt=""></button>
+    <button class="restartBtn"><img src="./icons/icons8-replay-48.png" alt=""></button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
