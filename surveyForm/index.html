@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cinema Lovers Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Cinema Lovers Survey Form</h1>
+      <p id="description">Help us to improve our movie data base</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="forms">
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name Surname"
+          required
+        />
+      </div>
+      <div class="forms">
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Please, enter your email"
+          required
+        />
+      </div>
+      <div class="forms">
+        <label for="age" id="number-label">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="12"
+          max="120"
+          placeholder="Please, enter your age"
+        />
+      </div>
+      <div class="forms">
+        <label for="frequency">How often do you visit our site?</label>
+        <select name="frequency" id="dropdown" required>
+          <option value="">--Please choose an option--</option>
+          <option value="rare">Rare</option>
+          <option value="often">Often</option>
+          <option value="seldom">Seldom</option>
+        </select>
+      </div>
+      <div class="forms">
+        <p>What is your favourite genre?</p>
+
+        <div class="buttons">
+          <input
+            type="radio"
+            id="detective"
+            name="radiobutton"
+            value="detective"
+          />
+          <label for="male">Detective</label>
+        </div>
+
+        <div class="buttons">
+          <input type="radio" name="radiobutton" id="comedy" value="comedy" />
+          <label for="detective">Comedy</label>
+        </div>
+
+        <div class="buttons">
+          <input
+            type="radio"
+            name="radiobutton"
+            id="thriller"
+            value="thriller"
+          />
+          <label for="detective">Triller</label>
+        </div>
+
+        <div class="buttons">
+          <input type="radio" name="radiobutton" id="scifi" value="scifi" />
+          <label for="detective">Science fiction</label>
+        </div>
+      </div>
+      <div class="forms">
+        <p>Choose favourite movies</p>
+        <div class="buttons">
+          <input
+            type="checkbox"
+            name="fmt"
+            id="fmt"
+            value="Full Metal Jacket"
+          />
+          <label for="fmt">Full Metal Jacket</label>
+        </div>
+
+        <div class="buttons">
+          <input type="checkbox" name="chase" id="chase" value="The Chase" />
+          <label for="chase">The Chase</label>
+        </div>
+
+        <div class="buttons">
+          <input
+            type="checkbox"
+            name="tobe"
+            id="tobe"
+            value="To be or not to be"
+          />
+          <label for="tobe">To be, or not to be</label>
+        </div>
+
+        <div class="buttons">
+          <input
+            type="checkbox"
+            name="sunset"
+            id="sunset"
+            value="Sunset Boulevard"
+          />
+          <label for="sunset">Sunset Boulevard</label>
+        </div>
+      </div>
+      <div class="forms">
+        <p>Which movie would you like to add?</p>
+        <textarea name="add" id="add" cols="40" rows="7">
+Add some movies</textarea
+        >
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
