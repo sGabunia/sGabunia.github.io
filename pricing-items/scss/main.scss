@@ -1,0 +1,187 @@
+@import "./config";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: coral;
+  background: rgb(6, 168, 101);
+  background: linear-gradient(0deg, $label-color 50%, $text-color 50%);
+  min-height: 100vh;
+}
+
+// typography
+
+h1 {
+  color: $main-color;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+h3 {
+  color: $label-color;
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.pricing-box p {
+  font-weight: 400;
+}
+
+.annualy {
+  color: black;
+  font-weight: 900;
+}
+
+.currency-logo {
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 2.5rem;
+}
+
+.duration {
+  margin-left: 0.2;
+}
+
+// button
+button {
+  background: none;
+  border: 1px solid $text-color;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.6rem 1.5rem;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  transition: 0.4s background-color ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background-color: rgb(204, 197, 197);
+}
+
+// images
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+// layout
+.main-box {
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  max-width: $max-width;
+  width: 90%;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  .switch-box {
+    display: flex;
+    justify-content: baseline;
+    font-size: 1rem;
+
+    div {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.packages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .pricing-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $text-color;
+    border-radius: 7px;
+    padding: 2rem 0.5rem;
+    margin: 0.1rem;
+    flex: 1 1 0;
+
+    // width: 0;
+
+    p {
+      margin: 0.7rem 0;
+    }
+
+    .choice {
+      margin-bottom: 1.5rem;
+    }
+
+    hr {
+      border: 1px solid $text-color;
+      width: 100%;
+    }
+  }
+}
+
+.terms {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+// switch button
+.switch-button {
+  display: flex;
+  border-radius: 9999px;
+  cursor: pointer;
+  height: 32px;
+  width: 64px;
+  margin: 0 0.6rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.ball {
+  border-radius: 9999px;
+  transform: translateX(-6px);
+  width: 32px;
+  background-color: #fff;
+}
+
+.switch-button input {
+  display: none;
+}
+
+.move-ball {
+  transform: translatex(22px);
+}
+
+// select
+select {
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+// active class
+.pricing-box.active {
+  border: 3px solid $main-color;
+  transform: scale(1.02);
+}
+
+@import "./media";

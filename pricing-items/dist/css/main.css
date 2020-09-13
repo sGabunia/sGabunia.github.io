@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #959597;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: coral;
+  background: #06a865;
+  background: linear-gradient(0deg, #a8c7f3 50%, #959597 50%);
+  min-height: 100vh; }
+
+h1 {
+  color: #457eec;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  text-align: center; }
+
+h3 {
+  color: #a8c7f3;
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase; }
+
+.pricing-box p {
+  font-weight: 400; }
+
+.annualy {
+  color: black;
+  font-weight: 900; }
+
+.currency-logo {
+  font-size: 1rem; }
+
+.price {
+  font-size: 2.5rem; }
+
+.duration {
+  margin-left: 0.2; }
+
+button {
+  background: none;
+  border: 1px solid #959597;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.6rem 1.5rem;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  transition: 0.4s background-color ease-in-out; }
+
+button:hover,
+button:focus {
+  background-color: #ccc5c5; }
+
+img {
+  max-width: 100%;
+  object-fit: cover; }
+
+.main-box {
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  max-width: 1080px;
+  width: 90%; }
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem; }
+  .select .switch-box {
+    display: flex;
+    justify-content: baseline;
+    font-size: 1rem; }
+    .select .switch-box div {
+      margin: 0 0.5rem; }
+
+.packages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .packages .pricing-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #959597;
+    border-radius: 7px;
+    padding: 2rem 0.5rem;
+    margin: 0.1rem;
+    flex: 1 1 0; }
+    .packages .pricing-box p {
+      margin: 0.7rem 0; }
+    .packages .pricing-box .choice {
+      margin-bottom: 1.5rem; }
+    .packages .pricing-box hr {
+      border: 1px solid #959597;
+      width: 100%; }
+
+.terms {
+  margin-top: 1rem;
+  text-align: right; }
+
+.switch-button {
+  display: flex;
+  border-radius: 9999px;
+  cursor: pointer;
+  height: 32px;
+  width: 64px;
+  margin: 0 0.6rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3); }
+
+.ball {
+  border-radius: 9999px;
+  transform: translateX(-6px);
+  width: 32px;
+  background-color: #fff; }
+
+.switch-button input {
+  display: none; }
+
+.move-ball {
+  transform: translatex(22px); }
+
+select {
+  cursor: pointer;
+  padding: 0.4rem; }
+
+.pricing-box.active {
+  border: 3px solid #457eec;
+  transform: scale(1.02); }
+
+@media (max-width: 873px) {
+  .main-box {
+    padding: 3rem 0.5rem; }
+  .packages {
+    flex-direction: column; }
+  .select {
+    flex-direction: column;
+    align-items: center; }
+    .select .switch-box {
+      margin-bottom: 1.5rem; } }

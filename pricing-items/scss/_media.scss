@@ -1,0 +1,16 @@
+@media (max-width: 873px) {
+  .main-box {
+    padding: 3rem 0.5rem;
+  }
+  .packages {
+    flex-direction: column;
+  }
+
+  .select {
+    flex-direction: column;
+    align-items: center;
+    .switch-box {
+      margin-bottom: 1.5rem;
+    }
+  }
+} ;

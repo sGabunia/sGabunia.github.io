@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Pricing Items</title>
+  </head>
+  <body>
+    <div class="main-box">
+      <h1>Pricing</h1>
+
+      <div class="select">
+        <div class="switch-box">
+          <p>Monthly</p>
+
+          <label class="switch-button">
+            <input type="checkbox" />
+
+            <div class="ball"></div>
+          </label>
+          <p class="annualy">Annualy(save 20%)</p>
+        </div>
+
+        <div class="currency">
+          <label for="currency">Select currency</label>
+          <select name="sel" id="currency">
+            <option value="usd">USD</option>
+            <option value="gel">GEL</option>
+          </select>
+        </div>
+      </div>
+
+      <section class="packages">
+        <div class="pricing-box free">
+          <img src="./img/party-balloon_1_100x100.png" alt="air balloon" />
+
+          <h3>Free</h3>
+          <p class="choice">
+            <span class="currency-logo">$</span><span class="price">0</span>
+            <span class="duration">monthly</span>
+          </p>
+          <hr />
+          <p>1-5 Active Events</p>
+          <p>30 day trial</p>
+          <p>No Booking Fees</p>
+          <button>start now</button>
+        </div>
+
+        <div class="pricing-box basic">
+          <img src="./img/paper-plane_100x100.png" alt="paper plain" />
+
+          <h3>Basic</h3>
+          <p class="choice">
+            <span class="currency-logo">$</span><span class="price">10</span>
+            <span class="duration">monthly</span>
+          </p>
+          <hr />
+          <p>5-9 Active Events</p>
+          <p>30 day trial</p>
+          <p>No Booking Fees</p>
+          <button>start now</button>
+        </div>
+
+        <div class="pricing-box advanced">
+          <img src="./img/aircraft-jet_100x100.png" alt="aircraft jet" />
+          <h3>advanced</h3>
+          <p class="choice">
+            <span class="currency-logo">$</span><span class="price">20</span>
+            <span class="duration">monthly</span>
+          </p>
+          <hr />
+          <p>10-15 Active Events</p>
+          <p>30 day trial</p>
+          <p>No Booking Fees</p>
+          <button>start now</button>
+        </div>
+
+        <div class="pricing-box premium">
+          <img src="./img/rocket-launch_100x100.png" alt="rocket launch" />
+          <h3>premium</h3>
+          <p class="choice">
+            <span class="currency-logo">$</span><span class="price">35</span
+            ><span class="duration">monthly</span>
+          </p>
+          <hr />
+          <p>1-5 Active Events</p>
+          <p>30 day trial</p>
+          <p>No Booking Fees</p>
+          <button>start now</button>
+        </div>
+      </section>
+
+      <p class="terms">VAT included on all prices shown</p>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
