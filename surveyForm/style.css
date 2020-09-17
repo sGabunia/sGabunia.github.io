@@ -120,8 +120,6 @@ button:hover {
   background-color: rgb(189, 110, 20);
 }
 
-/* media queries */
-
 @media (max-width: 768px) {
   header {
     width: 80%;
