@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Righteous&display=swap");
 
+/* general styles */
 * {
   margin: 0;
   padding: 0;
@@ -119,6 +120,7 @@ button:hover {
   background-color: rgb(189, 110, 20);
 }
 
+/* tablet */
 @media (max-width: 768px) {
   header {
     width: 80%;
@@ -128,6 +130,7 @@ button:hover {
   }
 }
 
+/* mobile */
 @media (max-width: 415px) {
   header {
     width: 100%;
