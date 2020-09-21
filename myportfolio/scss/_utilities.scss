@@ -1,0 +1,41 @@
+.container {
+  max-width: $website-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+
+  &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+.px {
+  &-1 {
+    padding: 0 1rem;
+  }
+
+  &-2 {
+    padding: 0 2rem;
+  }
+
+  &-3 {
+    padding: 0 3rem;
+  }
+
+  &-4 {
+    padding: 0 4rem;
+  }
+}
