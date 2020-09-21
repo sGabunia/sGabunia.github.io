@@ -1,0 +1,415 @@
+@import "config";
+@import "utilities";
+
+// General styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  background-color: $light-color;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3 {
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  transition: transform 1.2s ease;
+}
+
+img:hover {
+  transform: translateY(10px);
+}
+
+// Titles and subtitles
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.sub-title {
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+// Section titles
+.work-title {
+  margin-bottom: 2rem;
+  position: relative;
+
+  h2 {
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+}
+.circle {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(45, 253, 125, 1) 100%
+  );
+}
+
+section {
+  margin: 3rem 0;
+}
+
+// Navigation
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    cursor: pointer;
+    font-size: 2.1rem;
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    transition: all 0.8s ease;
+
+    &:hover {
+      letter-spacing: 1.5px;
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+
+  img {
+    width: 40px;
+    transform: translateY(25px);
+    opacity: 0;
+    transition: opacity 0.7s ease;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    padding: 0 1.5rem;
+  }
+
+  a {
+    color: $main-color;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0.3rem;
+    transition: border-color 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover {
+      border-color: $main-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+// Selected work section
+.selected-work {
+  .circle {
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  }
+  .work-items {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      border: 5px solid black;
+      border-radius: 10px;
+      width: 45%;
+      padding: 1rem 2rem;
+
+      img {
+        display: block;
+
+        &:hover {
+          transform: translateY(10px);
+        }
+      }
+    }
+
+    .dice-game {
+      transform: translateY(50px);
+    }
+  }
+}
+
+// Other works
+
+.other-works {
+  .circle {
+    background-image: linear-gradient(
+      153.4deg,
+      rgba(160, 250, 141, 1) 25.4%,
+      rgba(253, 217, 182, 1) 59%
+    );
+  }
+  margin-top: 3rem;
+
+  &-items {
+    display: grid;
+    border: 5px solid black;
+    border-radius: 10px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
+
+    grid-template-areas:
+      "a c"
+      "b c";
+
+    .item-1 {
+      grid-area: a;
+      border-right: 5px solid black;
+      border-bottom: 5px solid black;
+
+      img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+
+    .item-2 {
+      grid-area: b;
+      border-right: 5px solid black;
+
+      img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+
+    .item-3 {
+      grid-area: c;
+    }
+  }
+}
+
+// education, resume and github link
+.resume {
+  .circle {
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  }
+  &-wrapper {
+    display: flex;
+
+    &-education {
+      flex: 1;
+      padding: 0 2rem;
+
+      h2 {
+        margin-top: 0.7rem;
+      }
+    }
+
+    &-github {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+
+      a {
+        color: $main-color;
+        background-color: $light-color;
+        border: 5px solid black;
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 2;
+        border-radius: 15px;
+        padding: 1.5rem 3rem;
+        outline: none;
+        transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+
+        &:hover {
+          background-color: $main-color;
+          color: $light-color;
+        }
+      }
+    }
+  }
+}
+
+// Contact
+.contact {
+  .circle {
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  img {
+    width: 40px;
+    transform: translateY(25px);
+  }
+
+  form {
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-gap: 1.5rem;
+
+    input {
+      padding: 1.5rem;
+      font-size: 1.5rem;
+      border: 0.1px solid black;
+      border-radius: 5px;
+      outline: none;
+
+      &:focus {
+        border: 5px solid black;
+      }
+    }
+
+    textarea {
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding: 1.5rem;
+      border-radius: 5px;
+      outline: none;
+
+      &:focus {
+        border: 5px solid black;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 1.5rem;
+      border: 5px solid black;
+      border-radius: 10px;
+    }
+  }
+}
+
+// Footer
+footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 5px solid black;
+    padding: 1rem;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 1.3rem;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .main-nav {
+    p {
+      text-align: center;
+    }
+
+    img {
+      display: none;
+    }
+    ul {
+      display: none;
+    }
+  }
+  .selected-work {
+    .work-title {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .work-items {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        width: 95%;
+        margin-bottom: 1rem;
+      }
+      .dice-game {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .other-works-items {
+    display: block;
+
+    .item-1,
+    .item-2 {
+      border-right: none;
+    }
+    .item-3 {
+      border-top: 5px solid black;
+    }
+  }
+
+  .resume-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &-github {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .contact {
+    form {
+      width: 100%;
+      margin: 0;
+
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+
+  section {
+    margin: 1.5rem 0;
+  }
+}

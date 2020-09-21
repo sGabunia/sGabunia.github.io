@@ -1,0 +1,288 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.px-1 {
+  padding: 0 1rem; }
+
+.px-2 {
+  padding: 0 2rem; }
+
+.px-3 {
+  padding: 0 3rem; }
+
+.px-4 {
+  padding: 0 4rem; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  background-color: #fff; }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3 {
+  font-weight: 900;
+  text-transform: capitalize; }
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  transition: transform 1.2s ease; }
+
+img:hover {
+  transform: translateY(10px); }
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700; }
+
+.title {
+  font-size: 2.5rem; }
+
+.sub-title {
+  margin-bottom: 1.5rem;
+  text-transform: capitalize; }
+
+.work-title {
+  margin-bottom: 2rem;
+  position: relative; }
+  .work-title h2 {
+    position: absolute;
+    top: 0;
+    left: 10px; }
+
+.circle {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #22c1c3 0%, #2dfd7d 100%); }
+
+section {
+  margin: 3rem 0; }
+
+.main-nav {
+  display: flex;
+  justify-content: space-between; }
+  .main-nav p {
+    cursor: pointer;
+    font-size: 2.1rem;
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    transition: all 0.8s ease; }
+    .main-nav p:hover {
+      letter-spacing: 1.5px; }
+      .main-nav p:hover img {
+        opacity: 1; }
+  .main-nav img {
+    width: 40px;
+    transform: translateY(25px);
+    opacity: 0;
+    transition: opacity 0.7s ease; }
+  .main-nav ul {
+    display: flex;
+    align-items: center; }
+  .main-nav li {
+    padding: 0 1.5rem; }
+  .main-nav a {
+    color: #000;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0.3rem;
+    transition: border-color 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .main-nav a:hover {
+      border-color: #000; }
+    .main-nav a.current {
+      border-color: #000; }
+
+.selected-work .circle {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%); }
+
+.selected-work .work-items {
+  display: flex;
+  justify-content: space-between; }
+  .selected-work .work-items div {
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 45%;
+    padding: 1rem 2rem; }
+    .selected-work .work-items div img {
+      display: block; }
+      .selected-work .work-items div img:hover {
+        transform: translateY(10px); }
+  .selected-work .work-items .dice-game {
+    transform: translateY(50px); }
+
+.other-works {
+  margin-top: 3rem; }
+  .other-works .circle {
+    background-image: linear-gradient(153.4deg, #a0fa8d 25.4%, #fdd9b6 59%); }
+  .other-works-items {
+    display: grid;
+    border: 5px solid black;
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    grid-template-areas: "a c" "b c"; }
+    .other-works-items .item-1 {
+      grid-area: a;
+      border-right: 5px solid black;
+      border-bottom: 5px solid black; }
+      .other-works-items .item-1 img {
+        width: 100%;
+        height: 250px; }
+    .other-works-items .item-2 {
+      grid-area: b;
+      border-right: 5px solid black; }
+      .other-works-items .item-2 img {
+        width: 100%;
+        height: 250px; }
+    .other-works-items .item-3 {
+      grid-area: c; }
+
+.resume .circle {
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%); }
+
+.resume-wrapper {
+  display: flex; }
+  .resume-wrapper-education {
+    flex: 1;
+    padding: 0 2rem; }
+    .resume-wrapper-education h2 {
+      margin-top: 0.7rem; }
+  .resume-wrapper-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; }
+    .resume-wrapper-github a {
+      color: #000;
+      background-color: #fff;
+      border: 5px solid black;
+      font-weight: 700;
+      font-size: 2.2rem;
+      line-height: 2;
+      border-radius: 15px;
+      padding: 1.5rem 3rem;
+      outline: none;
+      transition: all 2s cubic-bezier(0.23, 1, 0.32, 1); }
+      .resume-wrapper-github a:hover {
+        background-color: #000;
+        color: #fff; }
+
+.contact .circle {
+  background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%); }
+
+.contact h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem; }
+
+.contact img {
+  width: 40px;
+  transform: translateY(25px); }
+
+.contact form {
+  margin: 0 auto;
+  width: 50%;
+  display: grid;
+  grid-gap: 1.5rem; }
+  .contact form input {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    outline: none; }
+    .contact form input:focus {
+      border: 5px solid black; }
+  .contact form textarea {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1.5rem;
+    border-radius: 5px;
+    outline: none; }
+    .contact form textarea:focus {
+      border: 5px solid black; }
+  .contact form button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem;
+    border: 5px solid black;
+    border-radius: 10px; }
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 5px solid black;
+  padding: 1rem; }
+
+footer ul {
+  display: flex; }
+  footer ul li {
+    margin-right: 1.3rem; }
+
+@media (max-width: 769px) {
+  .main-nav p {
+    text-align: center; }
+  .main-nav img {
+    display: none; }
+  .main-nav ul {
+    display: none; }
+  .selected-work .work-title h2 {
+    font-size: 2.5rem; }
+  .selected-work .work-items {
+    display: flex;
+    flex-direction: column; }
+    .selected-work .work-items div {
+      width: 95%;
+      margin-bottom: 1rem; }
+    .selected-work .work-items .dice-game {
+      transform: translateY(0); }
+  .other-works-items {
+    display: block; }
+    .other-works-items .item-1,
+    .other-works-items .item-2 {
+      border-right: none; }
+    .other-works-items .item-3 {
+      border-top: 5px solid black; }
+  .resume-wrapper {
+    display: flex;
+    flex-direction: column; }
+    .resume-wrapper-github {
+      margin-top: 1.5rem; }
+  .contact form {
+    width: 100%;
+    margin: 0; }
+    .contact form textarea {
+      width: 100%; }
+  section {
+    margin: 1.5rem 0; } }
