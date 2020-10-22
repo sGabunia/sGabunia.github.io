@@ -1,0 +1,122 @@
+#pricing-table {
+  padding: 4rem 0;
+
+  .pricing-table {
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    &-item {
+      flex: 1 1 25%;
+      text-align: center;
+
+      li {
+        padding: 0.7rem 0;
+        border: 0.0001em solid rgba(180, 179, 179, 0.25);
+        font-size: 0.8rem;
+        font-weight: 600;
+
+        span {
+          font-size: 0.6rem;
+          font-weight: 400;
+        }
+
+        .btn {
+          background-color: #2e4a5b;
+        }
+
+        h3 {
+          font-size: 1.4rem;
+        }
+      }
+
+      .price {
+        font-weight: 900;
+        font-size: 1.3rem;
+        padding: 1.6rem 0;
+        color: $white-color;
+        background-color: #2e4a5b;
+      }
+    }
+  }
+
+  .active-table {
+    transform: scale(1.02);
+    position: relative;
+
+    .ribbon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 80px;
+      width: 80px;
+      overflow: hidden;
+
+      &-text {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: $white-color;
+        position: absolute;
+        left: -47px;
+        top: 10px;
+
+        height: 24px;
+        width: 206px;
+        transform: rotate(45deg);
+        text-align: center;
+        background-color: $green-color;
+      }
+    }
+    .price {
+      background-color: $green-color;
+    }
+
+    .btn.btn-green {
+      background-color: $green-color;
+    }
+  }
+}
+
+// CARD
+#card {
+  padding: 4rem 0;
+
+  .card-items {
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    .card-item {
+      flex: 1 1 20%;
+      margin: 1rem 0.5rem;
+      background-color: #2e4a5b;
+      color: $white-color;
+
+      &-title {
+        padding: 1.2rem;
+
+        h6 {
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+
+        p {
+          color: $green-color;
+          font-size: 0.8rem;
+        }
+      }
+
+      &-logos {
+        div {
+          flex: 1 1 25%;
+          text-align: center;
+          padding: 1.2rem;
+          border: 0.5px solid rgba(255, 255, 255, 0.25);
+        }
+      }
+      &.active-item {
+        background-color: $green-color;
+
+        p {
+          color: #2e4a5b;
+        }
+      }
+    }
+  }
+}

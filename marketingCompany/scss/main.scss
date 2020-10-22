@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+
+// 2. Base stuff
+@import "base/base", "base/fonts", "base/typography", "base/helpers";
+
+// 3. Layout-related sections
+@import "layout/header", "layout/about", "layout/contact", "layout/features",
+  "layout/news", "layout/ourservices", "layout/pricing", "layout/services",
+  "layout/skills", "layout/work", "layout/footer";
+
+// 4. Components
+@import "components/button";
+
+// 5. Page-specific styles
+@import "pages/home";
+// MEDIA QUERIES
+@media (max-width: 1180px) {
+  .services-items {
+    flex: 1 1 50%;
+  }
+  #work {
+    .image-gallery-row {
+      .image-gallery-item {
+        flex: 1 1 50%;
+      }
+    }
+  }
+
+  #our-services {
+    .our-services-nav {
+      li {
+        flex: 1 1 250px;
+      }
+    }
+    .our-services-content {
+      align-items: center;
+      p {
+        flex-basis: 65%;
+        margin-left: 1rem;
+      }
+
+      .content-img {
+        flex-basis: 35%;
+      }
+    }
+  }
+
+  #breaking-news {
+    .breaking-news {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+
+  #pricing-table {
+    .pricing-table {
+      &-item {
+        flex: 1 1 50%;
+      }
+    }
+  }
+
+  #card {
+    .card-items {
+      .card-item {
+        flex: 1 1 45%;
+      }
+    }
+  }
+
+  #features {
+    background-image: none;
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .features {
+      width: 100%;
+      transform: translateX(17%);
+    }
+  }
+
+  #contact {
+    .contact-img {
+      display: none;
+    }
+
+    .contact-form {
+      flex: 0 1 70%;
+      margin: 0 auto;
+    }
+  }
+
+  #footer {
+    .footer-col {
+      flex: 1 1 42%;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .main-header {
+    .nav-links {
+      .burger {
+        display: block;
+        position: relative;
+        span {
+          padding: 0.2rem 1.5rem;
+          margin: 0.5rem 0;
+          display: block;
+          background-color: $green-color;
+          transition: all 0.5s ease-in;
+        }
+      }
+
+      .links {
+        width: 100%;
+        height: 100vh;
+        background-color: $header-bg;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 1s ease-in-out;
+      }
+
+      #menu-check {
+        display: block;
+        position: absolute;
+        top: 2.8%;
+        right: 13%;
+        width: 3.5rem;
+        height: 3.5rem;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 9999;
+      }
+
+      #menu-check:checked + .links {
+        transform: translate(-100%);
+      }
+
+      #menu-check:checked ~ .burger span {
+        background-color: $green-color;
+      }
+
+      #menu-check:checked ~ .burger span:nth-child(1) {
+        transform: rotateZ(45deg) translateY(300%);
+      }
+
+      #menu-check:checked ~ .burger span:nth-child(3) {
+        transform: rotateZ(-45deg) translateY(-335%);
+      }
+
+      #menu-check:checked ~ .burger span:nth-child(2) {
+        opacity: 0;
+      }
+    }
+  }
+
+  .services-items {
+    flex: 1 1 100%;
+  }
+
+  #skills {
+    .skills-content {
+      width: 90%;
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+
+  #work {
+    .image-gallery-row {
+      .image-gallery-item {
+        flex: 1 1 100%;
+      }
+    }
+
+    ul {
+      flex-direction: column;
+    }
+  }
+
+  #our-services {
+    .our-services-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  #buy-and-install {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  #breaking-news {
+    .breaking-news {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  #pricing-table {
+    .pricing-table {
+      &-item {
+        flex: 1 1 100%;
+      }
+    }
+  }
+
+  #card {
+    .card-items {
+      .card-item {
+        flex: 1 1 100%;
+      }
+    }
+  }
+
+  #contact {
+    .wrapper {
+      padding: 0 1.5rem;
+    }
+    .contact-img {
+      display: none;
+    }
+
+    .contact-form {
+      flex: 0 1 100%;
+    }
+  }
+
+  #footer {
+    .footer-col {
+      flex: 1 1 100%;
+    }
+  }
+}

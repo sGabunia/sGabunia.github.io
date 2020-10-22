@@ -1,0 +1,73 @@
+// OUR SERVICES
+#our-services {
+  padding: 3rem 0;
+  .our-services-nav {
+    margin: 3rem 0 2rem 0;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    text-transform: capitalize;
+    // justify-content: space-between;
+
+    li {
+      flex: 1 1 155px;
+      border: 1px solid $green-color;
+      cursor: pointer;
+      text-align: center;
+      padding: 0.5rem 0;
+
+      &:hover,
+      &:focus {
+        background-color: $green-color;
+        a {
+          color: $white-color;
+        }
+      }
+    }
+
+    a {
+      // padding: 1.5rem 3rem;
+      transition: background-color 0.5s ease-in;
+      font-size: 0.7rem;
+    }
+
+    .active {
+      background-color: $green-color;
+      a {
+        color: $white-color;
+      }
+    }
+  }
+
+  .our-services-content {
+    align-items: center;
+    p {
+      flex-basis: 85%;
+      margin-left: 1rem;
+    }
+
+    .content-img {
+      flex-basis: 15%;
+    }
+  }
+}
+
+#buy-and-install {
+  padding: 4rem 1rem;
+  background-color: #40474b;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: $white-color;
+    margin-bottom: 4rem;
+  }
+}

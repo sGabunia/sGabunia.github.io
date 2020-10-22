@@ -1,0 +1,33 @@
+// BREAKING NEWS SECTION
+#breaking-news {
+  padding: 4rem 0;
+
+  .breaking-news {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+
+    &-box {
+      position: relative;
+
+      &-date {
+        width: 55px;
+        height: 55px;
+        color: $white-color;
+        text-align: center;
+
+        font-size: 1rem;
+        background-color: $dark-green;
+        padding: 0.3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .active-box {
+      background-color: $green-color;
+    }
+  }
+}

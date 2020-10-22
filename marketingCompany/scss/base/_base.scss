@@ -1,0 +1,64 @@
+// Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+// General styles
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: $section-title-text;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 75%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+// backgrounds
+.bg-darkblue {
+  background-color: $dark-background;
+}
+
+.bg-green {
+  background-color: $green-color;
+}
+
+.bg-lightblue {
+  background-color: $blue-color;
+}
+
+.bg-purple {
+  background-color: #9c5da5;
+}
+
+.bg-coral {
+  background-color: #d67f7f;
+}
+
+.bg-yellow {
+  background-color: #bb8a36;
+}
+
+.bg-gray {
+  background-color: #8a8a8a;
+}
+
+.bg-darkgreen {
+  background-color: #24413e;
+}

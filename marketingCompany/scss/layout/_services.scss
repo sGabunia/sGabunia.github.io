@@ -1,0 +1,83 @@
+// SERVICESS SECTION
+.services {
+  min-height: 25vh;
+  flex-wrap: wrap;
+  &-items {
+    flex: 1 1 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    padding: 4rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .bg-darkblue {
+    color: $green-color;
+    border-top: 3px solid $green-color;
+  }
+
+  .bg-green {
+    color: $white-color;
+    border-top: 3px solid $white-color;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
+}
+
+// servises second
+#services {
+  .bg-darkblue {
+    .icon-circle {
+      padding: 1rem;
+      border: 1px solid $green-color;
+      border-radius: 50%;
+    }
+    .fa-stack {
+      .fa-circle {
+        color: $green-color;
+      }
+    }
+
+    p {
+      color: $green-color;
+    }
+    .services-number {
+      color: $white-color;
+    }
+  }
+
+  .bg-green {
+    .icon-circle {
+      padding: 1rem;
+      border: 1px solid $dark-background;
+      border-radius: 50%;
+    }
+    .fa-stack {
+      .fa-circle {
+        color: $dark-background;
+      }
+    }
+
+    p {
+      color: $dark-background;
+    }
+    .services-number {
+      color: $white-color;
+    }
+  }
+  p {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    margin: 0.6rem 0;
+  }
+
+  .services-number {
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+}

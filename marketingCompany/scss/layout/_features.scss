@@ -1,0 +1,42 @@
+#features {
+  padding: 6rem 0;
+  background-color: #233641;
+  color: $white-color;
+  background-image: url(/dist/img/laptop.jpg);
+  background-repeat: no-repeat;
+  background-position: left 30px bottom 40px;
+
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $green-color;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+  }
+
+  .features {
+    width: 50%;
+    margin: 0 auto;
+    transform: translateX(70%);
+    // text-align: center;
+
+    li {
+      margin: 0.8rem 0;
+      text-transform: capitalize;
+
+      i {
+        color: $green-color;
+        margin-right: 1rem;
+      }
+    }
+
+    .btn {
+      margin-top: 3rem;
+    }
+  }
+}

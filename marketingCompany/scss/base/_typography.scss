@@ -1,0 +1,37 @@
+a {
+  text-decoration: none;
+  color: $link-color;
+  font-size: $font-size-13;
+  font-weight: 700;
+}
+
+h2,
+h5 {
+  text-transform: capitalize;
+}
+
+// subheaders and bottom line under it
+
+.bottom-line1,
+.bottom-line2 {
+  width: 5%;
+  height: 1px;
+  background-color: $green-color;
+  margin: 0.2rem auto;
+}
+
+.bottom-line2 {
+  transform: translateX(5px);
+}
+
+h3.section-title {
+  color: $section-title-text;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.current {
+  color: $green-color;
+}

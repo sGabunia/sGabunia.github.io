@@ -1,0 +1,28 @@
+// ABOUT SECTION
+#about {
+  padding: 3rem 0;
+
+  .about-boxes {
+    margin-top: 3rem;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    i {
+      margin-right: 1.5rem;
+      color: $green-color;
+    }
+
+    &-row {
+      margin-bottom: 2.5rem;
+      gap: 3rem;
+      flex-wrap: wrap;
+
+      div {
+        flex: 1 1 300px;
+      }
+    }
+  }
+}

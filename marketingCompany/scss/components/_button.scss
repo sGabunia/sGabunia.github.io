@@ -1,0 +1,26 @@
+// buttons
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top: 2px solid #fff;
+}
+
+.btn {
+  &-green {
+    @extend %btn-shared;
+    color: #fff;
+    background-color: $green-color;
+  }
+
+  &-blue {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $blue-color;
+  }
+}

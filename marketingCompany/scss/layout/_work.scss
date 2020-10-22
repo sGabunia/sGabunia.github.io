@@ -1,0 +1,95 @@
+// WORK SECTION
+#work {
+  padding: 3rem 0;
+
+  .work-nav {
+    width: 50%;
+    margin: 3rem auto;
+    justify-content: space-between;
+    text-transform: capitalize;
+
+    li {
+      cursor: pointer;
+      padding-top: 0.5rem;
+      border-top: 2px solid transparent;
+      transition: border-top 1s ease-in;
+
+      &:hover {
+        border-top: 2px solid $green-color;
+      }
+    }
+
+    .current {
+      border-top: 2px solid $green-color;
+    }
+  }
+
+  // IMAGE GALLERY
+  .image-gallery {
+    &-row {
+      flex-wrap: wrap;
+
+      .image-gallery-item {
+        flex: 1 1 25%;
+        position: relative;
+
+        &:hover {
+          .description {
+            background-color: $white-color;
+            opacity: 1;
+          }
+        }
+
+        .description {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-transform: capitalize;
+          transition: opacity 1s ease;
+
+          i {
+            border: 1px solid $green-color;
+            color: $green-color;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            padding: 0.1rem;
+            margin-right: 0.6rem;
+            margin-top: 2.5rem;
+          }
+
+          .fa-hand-point-up {
+            background-color: $green-color;
+            color: $white-color;
+          }
+
+          h5 {
+            margin-top: 1rem;
+            font-size: 1rem;
+          }
+
+          p {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .btn {
+    margin-top: 3rem;
+    i {
+      margin-right: 0.8rem;
+    }
+  }
+}

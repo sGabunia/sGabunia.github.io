@@ -1,0 +1,68 @@
+#skills {
+  color: $white-color;
+  padding: 3rem 0;
+
+  .section-title {
+    color: inherit;
+    text-align: center;
+  }
+
+  .skills-content {
+    width: 50%;
+    margin: 0 auto;
+
+    ul {
+      margin: 3rem 0;
+      gap: 0.8rem;
+
+      li {
+        cursor: pointer;
+        padding-top: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-top: 2px solid transparent;
+        transition: border-top 1s ease-in;
+
+        &:hover {
+          border-top: 2px solid $green-color;
+        }
+      }
+
+      .current {
+        border-top: 2px solid $green-color;
+      }
+    }
+
+    .progress-bars {
+      .progress-bar {
+        margin: 1rem 0;
+        border: 1px solid $section-title-text;
+
+        .bar {
+          padding: 0.3rem 0.3rem 0.3rem 0.6rem;
+          border-radius: 0 3px 3px 0;
+          text-transform: uppercase;
+        }
+      }
+      .bg-purple {
+        width: 80%;
+      }
+
+      .bg-lightblue {
+        width: 90%;
+      }
+
+      .bg-coral {
+        width: 75%;
+      }
+
+      .bg-green {
+        width: 93%;
+      }
+
+      .bg-yellow {
+        width: 85%;
+      }
+    }
+  }
+}
